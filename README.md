@@ -1,18 +1,16 @@
-# Taller de DNS
+# Taller Oxidar LS
 
-## 1. Setup UDP server
+## 1. Setup Your Project 
 
-In this stage, we'll setup a UDP server that can receive and respond to UDP packets on port 2053.
+In this stage, we'll setup command line app that replies with a standard hello world message.
 
 The tester will execute your program like this:
 
-```jsx
-$ ./your_program.sh
+```shell
+$ ./your_program
 ```
 
-The tester will then send a UDP packet to port **2053**.
-
-Your program should respond back with a UDP packet. It's okay to ignore the contents of the packet for now, we'll work on that in the next stage.
+It then expects to receive a "Hello Rust!" on the standard output.
 
 ## 2. Write header section
 
