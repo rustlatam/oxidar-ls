@@ -30,7 +30,10 @@ En esta página no sólo encontraremos el listado de crates disponibles para uti
 
 Visual Studio Code tiene gran soporte para Rust. Se recomienda instalar los siguientes plug-ins:
 
-- `rust-analyzer`
+- [rust-analyzer](https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer)
+- [Rust Syntax](https://marketplace.visualstudio.com/items?itemName=dustypomerleau.rust-syntax)
+- [Even Better TOML](https://marketplace.visualstudio.com/items?itemName=tamasfe.even-better-toml)
+- [Dependi](https://marketplace.visualstudio.com/items?itemName=fill-labs.dependi)
 
 
 # Corriendo el proyecto
