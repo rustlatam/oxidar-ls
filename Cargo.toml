@@ -11,3 +11,6 @@ thiserror = "1.0"
 
 [lints.rust]
 unsafe_code = "forbid"
+
+[features]
+stage1 = []
