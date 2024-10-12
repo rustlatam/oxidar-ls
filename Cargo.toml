@@ -15,7 +15,7 @@ thiserror = "1.0"
 clap = "4.5.20"
 
 [lints.rust]
-unsafe_code = "allow"
+unsafe_code = "forbid"
 
 [features]
 stage1 = []
