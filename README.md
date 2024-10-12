@@ -11,6 +11,7 @@ $ ./your_program
 ```
 
 It then expects to receive a "Hello Rust!" on the standard output.
+asdf asdf
 
 ## 2. Write header section
 
