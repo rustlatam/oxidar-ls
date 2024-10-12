@@ -11,11 +11,9 @@
 - `cargo test`: Corre los tests.
 - `cargo add <nombre_de_dependencia>`: Agrega al `Cargo.toml` la dependencia `<nombre_de_dependencia>`
 
-<<<<<<< Updated upstream
 It then expects to receive a "Hello Rust!" on the standard output.
-=======
+
 ### crates.io
->>>>>>> Stashed changes
 
 [crates.io](https://crates.io) es el sitio donde se alojan todos los crates públicos o herramientas de líneas de comando que podemos utilizar para construir nuestro proyecto. Generalmente cuando necesitamos una dependencia la solemos buscar aquí.
 
