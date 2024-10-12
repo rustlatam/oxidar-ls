@@ -12,6 +12,6 @@ fn test_stage_1() {
         .output()
         .expect("failed to execute process");
 
-    println!("{}", String::from_utf8(output.stdout).unwrap());
-    println!("{}", String::from_utf8(expected.stdout).unwrap());
+    assert!(output.status.success());
+    assert_eq!(output.stdout, expected.stdout);
 }
