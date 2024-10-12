@@ -1,7 +1,11 @@
 [package]
 name = "oxidar-ls"
 version = "0.1.0"
-authors = ["Hernan G. Gonzalez <contact@hernan.rs>"]
+authors = [
+    "Alejandro <aleiton1993@gmail.com>",
+    "Hernan <contact@hernan.rs>",
+    "Nicolas <nicolas.antinori.7@gmail.com>",
+]
 edition = "2021"
 
 [dependencies]
