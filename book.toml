@@ -1,0 +1,12 @@
+[book]
+title = "Oxidar LS"
+description = "Taller guiado para la programación Rust"
+authors = [
+    "Alejandro <aleiton1993@gmail.com>",
+    "Hernan <contact@hernan.rs>",
+    "Nicolas <nicolas.antinori.7@gmail.com>",
+]
+src = "book"
+
+[build]
+build-dir = "book/build"

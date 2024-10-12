@@ -48,3 +48,7 @@ Para probar el proyecto, corre `cargo run`. Después de la compilación debería
 Cambia el mensaje a "Hola, Oxidar!" para pasar el primer nivel.
 
 Exitos!
+
+## La Guia
+El taller esta disponible con [mdbook](https://rust-lang.github.io/mdBook/guide/installation.html), para correlo localmente puedes ejecutar
+```mdbook serve```
