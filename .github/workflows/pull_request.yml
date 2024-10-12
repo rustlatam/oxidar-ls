@@ -19,8 +19,7 @@ jobs:
       with:
         require-changes-to:
         prevent-changes-to: |
-          Cargo.toml
-          Course.toml
+          *.toml
         token: ${{ secrets.GITHUB_TOKEN }}
     - name: Format
       run: cargo fmt --verbose
