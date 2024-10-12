@@ -14,6 +14,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
+    - name: Ensure Files Changed
+      uses: danieljimeneznz/ensure-files-changed@v4.1.0
+      with:
+        require-changes-to:
+        prevent-changes-to: |
+          Cargo.toml
+          Course.toml
+        token: ${{ secrets.GITHUB_TOKEN }}
     - name: Format
       run: cargo fmt --verbose
     - name: Lint
