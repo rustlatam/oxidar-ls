@@ -11,13 +11,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
-    - name: Check changes.
-      uses: danieljimeneznz/ensure-files-changed@v4.1.0
+    - name: Config Changes not allowed
+      uses: xalvarez/prevent-file-change-action@v1
       with:
-        require-changes-to:
-        prevent-changes-to: |
-          *.toml
-        token: ${{ secrets.GITHUB_TOKEN }}
+        githubToken: ${{ secrets.GITHUB_TOKEN }}
+        pattern: .*\.toml
     - name: Format
       run: cargo fmt --verbose
     - name: Lint
