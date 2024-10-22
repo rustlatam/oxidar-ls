@@ -24,3 +24,5 @@ unsafe_code = "forbid"
 stage0 = []
 stage1 = []
 stage2 = []
+stage3 = []
+stage5 = []
