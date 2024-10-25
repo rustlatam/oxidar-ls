@@ -1,3 +1,4 @@
+#![cfg(feature = "stage0")]
 use std::process::Command;
 
 #[test]

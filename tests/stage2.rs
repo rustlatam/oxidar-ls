@@ -1,11 +1,17 @@
-#![cfg(feature = "stage1")]
+#![cfg(feature = "stage2")]
 
+mod helpers;
+
+use helpers::split_ls_output;
+use rstest::rstest;
 use std::process::Command;
 
-#[test]
-fn test_stage_2() {
+#[rstest]
+#[case::short_argument("-a")]
+#[case::long_argument("--all")]
+fn test_stage_2(#[case] ls_argument: &str) {
     let output = Command::new("./target/debug/oxidar-ls")
-        .args(["-a", "./test_dir"])
+        .args([ls_argument, "./test_dir"])
         .output()
         .expect("failed to execute process");
 
@@ -14,6 +20,10 @@ fn test_stage_2() {
         .output()
         .expect("failed to execute process");
 
-    println!("{}", String::from_utf8(output.stdout).unwrap());
-    println!("{}", String::from_utf8(expected.stdout).unwrap());
+    assert!(output.status.success());
+
+    let expected = split_ls_output(&expected.stdout);
+    let output = split_ls_output(&output.stdout);
+
+    assert_eq!(expected, output);
 }
