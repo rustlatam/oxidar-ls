@@ -1,3 +1,8 @@
+#![cfg(feature = "stage1")]
+
+mod helpers;
+
+use helpers::split_ls_output;
 use std::process::Command;
 
 #[test]
@@ -13,5 +18,9 @@ fn test_stage_1() {
         .expect("failed to execute process");
 
     assert!(output.status.success());
-    assert_eq!(output.stdout, expected.stdout);
+
+    let expected = split_ls_output(&expected.stdout);
+    let output = split_ls_output(&output.stdout);
+
+    assert_eq!(expected, output);
 }

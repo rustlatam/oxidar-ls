@@ -14,8 +14,15 @@ bytes = "1.3"
 thiserror = "1.0"
 clap = "4.5.20"
 
+[dev-dependencies]
+rstest = "0.23.0"
+
 [lints.rust]
 unsafe_code = "forbid"
 
 [features]
+stage0 = []
 stage1 = []
+stage2 = []
+stage3 = []
+stage5 = []
