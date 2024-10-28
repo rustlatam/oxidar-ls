@@ -17,7 +17,7 @@ Options:
   -a, --all     Show hidden files
   -F, --format  Format file names. Appendds a symbol at the end indicating the type of file. Slash ('/') is for directories and at sign ('@') is for symbolic links
   -l, --list    Show the files in a list
-  -h, --human   Show the files in a list
+  -h, --human   Show the file size in a human-redable format
       --help
 "#;
 
