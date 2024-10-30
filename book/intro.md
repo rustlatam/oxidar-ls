@@ -11,4 +11,13 @@ En todos los casos los tests corren de acuerdo al nivel en el que estás en el d
 ## Etapas
 El taler esta dividio en etapas que van agregando un nuevo desafio sobre lo que implementaste en el paso anterior. Los tests se van sumando, y vamos a chequear que no tengas regresiones ;) 
 
+## Lecturas Recomendadas
+Los siguiente son libros fundamentales para todo Rustacean. Te recomendamos que los mantengas de referencia en un acceso rápido.
+
+El libro de cabecera de todo Rust!
+* [The Book](https://doc.rust-lang.org/book/)
+
+Guia de pequeños ejercicios interactivos.
+* [Rustlinks](https://rustlings.cool)
+
 Hora de oxidar!
