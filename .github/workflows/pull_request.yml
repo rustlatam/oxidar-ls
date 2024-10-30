@@ -16,6 +16,11 @@ jobs:
       with:
         githubToken: ${{ secrets.GITHUB_TOKEN }}
         pattern: .*\.toml
+    - name: Test Changes not allowed
+      uses: xalvarez/prevent-file-change-action@v1
+      with:
+        githubToken: ${{ secrets.GITHUB_TOKEN }}
+        pattern: tests/*
     - name: Format
       run: cargo fmt --verbose
     - name: Lint
