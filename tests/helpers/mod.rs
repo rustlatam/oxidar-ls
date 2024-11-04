@@ -1,3 +1,5 @@
+#![allow(dead_code)]
+
 /// Splits the outbut by space, newline, tab or null characters
 pub fn split_ls_output(output: &[u8]) -> Vec<&str> {
     std::str::from_utf8(output)
