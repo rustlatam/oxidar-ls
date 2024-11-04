@@ -11,6 +11,7 @@ use std::process::Command;
 #[case::arguments_lF(&["-l", "-F"])]
 #[case::arguments_lFh(&["-l", "-F", "-h"])]
 #[case::arguments_lFha(&["-l", "-F", "-h", "-a"])]
+#[case::arguments_lFha(&["-lFha"])] // This tests tha clap was introduced and works as expected
 fn test_stage_5(#[case] ls_arguments: &[&'static str]) {
     let output = Command::new("./target/debug/oxidar-ls")
         .args([ls_arguments, &["./test_dir"]].concat())
