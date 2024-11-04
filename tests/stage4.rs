@@ -2,7 +2,6 @@
 
 mod helpers;
 
-use helpers::{split_ls_column_output, split_ls_output_by_newline};
 use rstest::rstest;
 use std::process::Command;
 
