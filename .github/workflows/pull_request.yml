@@ -27,8 +27,14 @@ jobs:
       run: cargo clippy --verbose
     - name: Build
       run: cargo build --verbose
-    - name: Test
+    - name: Run Unit Tests
       run: cargo test --verbose
+    - name: Run Stage tests
+      uses: ruby/setup-ruby
+        with:
+          ruby-version: '3.1' # Not needed with a .ruby-version file
+      - run: bundle install
+      - run: bundle exec ruby run_tests.rb    
     - name: Congratulations
       uses: actions/github-script@v7
       with:
