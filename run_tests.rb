@@ -1,4 +1,4 @@
-require 'tomlrb'
+require 'toml-rb'
 
 # Helper functions
 def ensure_build
@@ -10,7 +10,8 @@ def ensure_build
 end
 
 def select_stage
-    toml_data = Tomlrb.load_file('Course.toml')
+    path = File.join(File.dirname(__FILE__), 'Course.toml')
+    toml_data = TomlRB.load_file(path)
     return toml_data['test']['level']
 end
 
