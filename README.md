@@ -1,3 +1,5 @@
+![oxidar](https://github.com/user-attachments/assets/124722d8-3672-4286-8dde-17c22976d141)
+
 # Oxidar
 ¡Bienvenido a **Oxidar**! El objetivo de este curso es aprender Rust creando un proyecto desde cero. El curso está dividido en varias etapas donde iremos agregando nuevas funcionalidades al proyecto, cada una introduciendo un nuevo concepto o un desafío con lo que ya se vio hasta el momento.
 
